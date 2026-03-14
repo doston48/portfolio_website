@@ -1,0 +1,14 @@
+{% extends "portfolio?base.html" %}
+
+{% block content %}
+
+<div class="col-md-4">
+    <div class="card">
+        <h3>edit profile</h3>
+        <form method="post">
+            {% crsf_token %}
+            {{ form.as_p }}
+            <button class="btn btn_primary" type="submit">edit</BUTTON>
+            </form>
+        </div>
+    </div>
